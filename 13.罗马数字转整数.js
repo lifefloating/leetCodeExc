@@ -21,7 +21,6 @@ var cond = {
 var romanToInt = function(s) {
     var result = 0
     for (var i = 0; i < s.length; i++) {
-        console.log(i)
         if (cond[s[i]] < cond[s[i+1]]) {
             result -= cond[s[i]]
         } else {
